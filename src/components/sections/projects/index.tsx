@@ -2,6 +2,7 @@
 import { Carousel } from 'react-responsive-carousel'
 import classNames from 'classnames'
 import Section from '../../atoms/section'
+import Project1 from './Project1'
 
 // icons
 import Arrow from 'assets/svgs/arrow.svg'
@@ -13,6 +14,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Projects: React.FC = (): React.ReactElement => {
   return (
     <Section id="projects" className={classes.container}>
+      <h2>Projects I have been working on</h2>
       <Carousel
         showArrows={true}
         showStatus={false}
@@ -34,15 +36,9 @@ const Projects: React.FC = (): React.ReactElement => {
           )
         }
       >
-        <div>
-          <div className={classes.project} />
-        </div>
-        <div>
-          <div className={classes.project} />
-        </div>
-        <div>
-          <div className={classes.project} />
-        </div>
+        <Project1 />
+        <Project1 />
+        <Project1 />
       </Carousel>
     </Section>
   )
