@@ -1,0 +1,64 @@
+@import 'src/styles/variables';
+
+.card {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  
+  .visualization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .bubble {
+      width: 55px;
+      height: 55px;
+      background: $medium-grey;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+        width: 32px;
+        height: auto;
+        fill: $primary;
+        stroke: $primary;
+      }
+    }
+    
+    .line {
+      width: 3px;
+      flex-grow: 1;
+      background: $medium-grey;
+    }
+  }
+  
+  .content {
+    margin-left: 1rem;
+    
+    .title {
+      display: flex;
+      flex-direction: row;
+      margin: 12px 0 0 0;
+      align-items: flex-end;
+      
+      h4 {
+        font-family: $semi-bold-font;
+      }
+      
+      h5 {
+        margin-left: 1rem;
+        font-size: 14px;
+      }
+    }
+    
+    > div {
+      margin-bottom: 1.5rem;
+      
+      font-family: $light-font;
+      line-height: 1.5;
+    }
+  }
+}
