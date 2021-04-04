@@ -15,6 +15,15 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
+  
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  > p {
+    padding: 0 8rem;
+    text-align: center;
+  }
 }
 
 .bottom {
@@ -65,5 +74,20 @@
   
   &Next {
     right: 0;
+  }
+}
+
+.helfr-landing-page-color,
+.helfr-app-color,
+.token-platform-color {
+  color: #6432fa;
+}
+
+.helfr-app-img {
+  box-shadow: none;
+  
+  > img {
+    width: 120% !important;
+    margin-left: -2rem;
   }
 }
